@@ -9,6 +9,7 @@ body {
     background-color: #ece2c6;
 }
 
+/* navigation bar and header */
 header {
     padding: 20px;
     background-color: #311212;
@@ -53,6 +54,8 @@ a:visited {
   text-decoration: underline;
 }
 
+
+/* subtitle section */
 .sub {
     height: 250px;
     width: 100%;
@@ -64,9 +67,11 @@ a:visited {
 
 .subtitle {
     padding: 50px;
-    text-align: end;
+    text-align: center;
 }
 
+
+/* about me section */
 #aboutMe {
     font-size: 35px;
     margin-left: 60px;
@@ -95,6 +100,8 @@ a:visited {
     margin-right: 70px;
 }
 
+
+/* works section */
 #work {
     font-size: 35px;
     margin-left: 60px;
@@ -105,6 +112,68 @@ a:visited {
     text-align: center;
 }
 
+.works img {
+    border-color: #1d0505;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.smallpic {
+    height: 250px;
+    width: 460px;
+    border-style: solid;
+    border-width: 3px;
+    margin-left: 300px;
+}
+
+.bigpic {
+    height: 500px;
+    width: 950px;
+    border-style: solid;
+    border-width: 3px;
+    margin-left: 200px;
+    margin-top: 10px;
+}
+
+.bigpichead {
+    float:left;
+    font-size: 30px;
+    padding: 10px;
+    background-color: white;
+    position: relative;
+    margin-bottom: -50px;
+    margin-left: 500px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.storehead {
+    float:left;
+    font-size: 30px;
+    padding: 10px;
+    background-color: white;
+    position: relative;
+    margin-bottom: -50px;
+    margin-left: 450px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.pseudohead {
+    font-size: 30px;
+    padding: 10px;
+    width: 20%;
+    text-align: center;
+    background-color: white;
+    position: relative;
+    margin-bottom: -40px;
+    margin-left: 400px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+
+/* contacts section */
 #contactMe {
     font-size: 35px;
     margin-left: 60px;
@@ -113,4 +182,31 @@ a:visited {
     padding: 10px;
     background-color: rgb(250, 250, 250);
     text-align: center;
+    position: relative;
+    margin-bottom: -40px;
 }
+
+.contacts {
+    display: inline-block;
+    font-size: 25px;
+    text-decoration: underline;
+    padding: 20px;
+    background-color: #1d0505;
+    width: 100%;
+    padding-left: 25%;
+}
+
+.contacts ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+
+
+/* fits web to different sizes */
+@media screen and (max-width: 768px) {
+    header, body {
+      flex-direction: column;
+    }
+  }
+  
